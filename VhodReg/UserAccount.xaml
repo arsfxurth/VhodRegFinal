@@ -1,0 +1,37 @@
+﻿<Window x:Class="VhodReg.UserAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VhodReg"
+        mc:Ignorable="d"
+        Title="UserAccount" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Source="Resources/149071.png" Width="200"/>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30" FontSize="30">Имя:</TextBlock>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30" FontSize="30" Grid.Column="1" x:Name="userName"></TextBlock>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30" FontSize="30" Grid.Row="1">email:</TextBlock>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30" FontSize="30" Grid.Column="1" Grid.Row="1" x:Name="userEmail"></TextBlock>
+            
+        </Grid>
+        <Button Grid.Row="1" Width="200" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20, 80" x:Name="logOut" Click="logOut_Click">Выйти</Button>
+        <Button Grid.Row="1" Width="200" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20, 80" x:Name="nazad" Grid.Column="1" Click="nazad_Click">Назад</Button>
+    </Grid>
+</Window>
